@@ -1,0 +1,276 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+\usepackage[round]{natbib}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[parfill]{parskip} % new line between paragraphs, no indentation
+\usepackage[colorlinks,pdfstartview=FitH,citecolor=blue]{hyperref}
+\usepackage{xcolor}
+\usepackage{xeCJK} % Enabling Chinese characters
+
+% Header
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}%Clear all heads and foots
+\setlength{\headheight}{35pt} %Eliminate the warning of "headheight is too samll"
+\rhead{PM2.5 Characteristics\\Jianzhao Bi\\\today}
+\cfoot{\thepage}
+
+
+\begin{document}
+
+\section{PM2.5 Composition and Sources}
+
+PM is a widespread air pollutant, consisting of a mixture of solid and liquid particles suspended in the air. PM2.5 refers to the particles with aerodynamic diameters less than or equal to 2.5 $\mu m$.
+
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|c|p{0.6\textwidth}|}
+        \hline
+        \textbf{PM2.5 Composition} & \textbf{Sources}  \\
+        \hline
+        BC/EC & Combustion sources (primary) \\
+        \hline
+        VOC & Biogenic emissions, fossil fuel combustion \\
+        \hline
+        Sulfate &  Sulfur dioxide emissions from power plants, industrial facilities, and traffic sources (secondary) \\
+        \hline
+        Nitrate & Nitrogen oxides released from power plants, mobile sources, and other combustion sources (secondary) \\
+        \hline
+        Ammonium & Agricultural sources \\
+        \hline 
+        Metals &  Oil combustion, crustal dust \\
+        \hline
+    \end{tabular}
+    \caption{PM2.5 composition and sources}
+    \label{tab:com}
+\end{table}
+
+\paragraph{Related Links}
+
+\begin{enumerate}
+    \item \href{https://cfpub.epa.gov/roe/indicator_pdf.cfm?i=19}{Particulate Matter Emissions (EPA)}
+     \item \href{http://www.euro.who.int/__data/assets/pdf_file/0006/189051/Health-effects-of-particulate-matter-final-Eng.pdf}{Health Effects of Particulate Matter (WHO)}
+\end{enumerate}
+
+\section{PM2.5 Health Effects}
+
+When inhaled, particle pollution can travel deep into the lungs and cause or aggravate heart and lung diseases. There is no evidence of a safe level of exposure or a threshold below which no adverse health effects occur.
+
+At present, at the population level, there is not enough evidence to identify differences in the effects of particles with different chemical compositions or emanating from various sources \citep{stanek2011attributing}. It should be noted, however, that the evidence for the hazardous nature of combustion-related PM (from both mobile and stationary sources) is more consistent than that for PM from other sources \citep{world2007health}. Gaseous pollutants have health effects of their own and may act in concert with PM to cause health effects. Any consideration of the health effects of different components and sources of PM must consider how gaseous pollutants may affect the toxicity of PM constituents \citep{adams2015particulate}.
+
+\subsection{Particle Pollution Affects the Lungs}
+
+Exposure to particle pollution causes increases in:
+\begin{itemize}
+    \item Doctor and emergency room visits
+    \item Hospital admissions
+    \item Use of prescription medication
+    \item Absences from work and school
+\end{itemize}
+
+Effects of \textbf{short-term (acute)} exposure:
+\begin{itemize}
+    \item Coughing
+    \item Shortness of breath
+    \item Tightness of the chest
+    \item Irritation of the eyes
+\end{itemize}
+
+Effects of \textbf{long-term (chronic)} exposure:
+\begin{itemize}
+    \item Reduced lung function
+    \item Development of respiratory diseases in children
+    \item Aggravation of existing lung diseases (such as asthma)
+    \item Premature death of people with lung disease
+    \item Mortality from lung cancer
+\end{itemize}
+
+\subsection{Particle Pollution Affects the Heart}
+
+Inhaled particles can pass from the lungs into the bloodstream and affect the cardiovascular system.
+
+Effects of \textbf{short-term (acute)} exposure:
+\begin{itemize}
+    \item Irregular heart beat
+    \item Nonfatal heart attacks
+\end{itemize}
+
+Effects of \textbf{long-term (chronic)} exposure:
+\begin{itemize}
+    \item Aggravation of existing heart diseases
+    \item Premature death of people with heart disease
+\end{itemize}
+
+\subsection{Susceptible Groups}
+\begin{itemize}
+    \item Children: 1) Lungs are still developing; 2) spend more time at high activity levels
+    \item Elderly people: May have undiagnosed heart or lung diseases
+    \item People with existing heart or lung diseases: Particle pollution aggravates these diseases
+    \item People who exercise or work outdoors: Breathe faster and deeper than sedentary adults
+\end{itemize}
+
+\paragraph{Related Links}
+
+\begin{enumerate}
+    \item \href{https://www.epa.gov/sites/production/files/2014-05/documents/huff-particle.pdf}{Overview of Particle Air Pollution (EPA)}
+    \item \href{http://www.euro.who.int/__data/assets/pdf_file/0006/189051/Health-effects-of-particulate-matter-final-Eng.pdf}{Health Effects of Particulate Matter (WHO)}
+\end{enumerate}
+
+\section{Mechanisms of PM2.5 Health Effects}
+
+\subsection{Respiratory disease}
+
+\paragraph{Reactive oxygen species (ROS)} ROS are chemically reactive chemical species containing oxygen. ROS are formed as a natural byproduct of the normal metabolism of oxygen and have important roles in cell signaling and homeostasis. However, during times of environmental stress (\textit{e.g.,} UV or heat exposure), ROS levels can increase dramatically. This may result in significant damage to cell structures. Cumulatively, this is known as oxidative stress. Reactive oxygen species are implicated in cellular activity to a variety of inflammatory responses including cardiovascular disease. ROS are also implicated in mediation of apoptosis or programmed cell death and ischaemic injury. Specific examples include stroke and heart attack.
+
+\subsection{Cardiovascular disease}
+
+\paragraph{Changes in the control of blood clotting}  Inhaled particles, especially very small particles, may set up inflammation in the lung and that this can trigger changes in the control of blood clotting (凝血). Blood clots can travel to the arteries or veins in the brain, heart, kidneys, lungs and limbs, which in turn can cause heart attack, stroke, damage to the body's organs or even death.
+
+\paragraph{Stability of fatty deposits}  Changes in chemical factors in the blood can affect the stability of the fatty deposits (atheromatous plaques, 动脉粥样化斑) found in the walls of arteries (动脉) in many people -- especially those in the walls of the arteries which supply blood to the muscle of the heart itself. If this is true then a link between inhalation of particles and the likelihood of, for example, heart attacks will have been established.
+
+\paragraph{Triggering of a reflexes} The inhalation of particles and perhaps some pollutant gases may trigger a reflex (反射) that leads to a subtle change in the rhythm of the heart. The triggering of a reflex begins when some stimulus is detected by a receptor, a message is sent along nerves to the spinal cord or brain and a response follows. Well known reflexes include the production of saliva on smelling appetising food and the forward kick of the leg when the tendon below the knee-cap is tapped smartly. Coughing is also a reflex: in this case the receptors are in the airways and the trigger is an irritant: perhaps a crumb of food. Air pollutants may stimulate receptors in the airways and though coughing may not be produced, reflex changes in the rhythm of the heart may occur. Such changes may lead to the heart being more susceptible to dangerous changes in rhythm: such changes can cause sudden death. 
+
+\paragraph{Related Links}
+
+\begin{enumerate}
+    \item \url{https://en.wikipedia.org/wiki/Reactive_oxygen_species}
+    \item \href{https://www.gov.uk/government/publications/comeap-cardiovascular-disease-and-air-pollution}{COMEAP: cardiovascular disease and air pollution}
+\end{enumerate}
+
+\section{PM2.5 and Kidney Disease}
+
+\subsection{Renal Function and Disease}
+
+\subsubsection{Renal Function}
+Renal function, in nephrology, is an indication of the kidney's condition and its role in renal physiology. 
+
+\paragraph{Glomerular Filtration Rate} Glomerular filtration rate (GFR) describes the flow rate of filtered fluid through the kidney. The estimated glomerular filtration rate (eGFR) is a calculation based on a serum creatinine (肌酐) test. 
+
+
+\subsubsection{Acute Renal Failure (ARF)}
+Acute renal failure (ARF) is an abrupt loss of kidney function that develops within 7 days. 
+
+\paragraph{Causes} Its causes are numerous. Generally it occurs because of damage to the kidney tissue caused by decreased kidney blood flow (kidney ischemia) from any cause (e.g., low blood pressure), exposure to substances harmful to the kidney, an inflammatory process in the kidney, or an obstruction of the urinary tract that impedes the flow of urine. The causes of acute kidney injury are commonly categorized into prerenal, intrinsic, and postrenal.
+\begin{itemize}
+    \item Prerenal causes of AKI (``pre-renal azotemia'') are those that decrease effective blood flow to the kidney and cause a decrease in the glomerular filtration rate (GFR).
+        \begin{itemize}
+            \item Notable causes of prerenal AKI include low blood volume (e.g., dehydration), low blood pressure, heart failure (leading to cardiorenal syndrome), liver cirrhosis and local changes to the blood vessels supplying the kidney. 
+            \item The latter include renal artery stenosis, or the narrowing of the renal artery which supplies the kidney with blood, and renal vein thrombosis, which is the formation of a blood clot in the renal vein that drains blood from the kidney.
+        \end{itemize}
+    \item Intrinsic AKI refers to disease processes which directly damage the kidney itself. Intrinsic AKI can be due to one or more of the kidney's structures including the glomeruli, kidney tubules, or the interstitium. 
+        \begin{itemize}
+            \item Common causes of each are glomerulonephritis, acute tubular necrosis (ATN), and acute interstitial nephritis (AIN), respectively. 
+            \item Other causes of intrinsic AKI are rhabdomyolysis and tumor lysis syndrome.
+            \item Certain medication classes such as calcineurin inhibitors (e.g., tacrolimus) can also directly damage the tubular cells of the kidney and result in a form of intrinsic AKI.
+        \end{itemize}
+    \item Postrenal AKI refers to acute kidney injury caused by disease states downstream of the kidney and most often occurs as a consequence of urinary tract obstruction. This may be related to benign prostatic hyperplasia, kidney stones, obstructed urinary catheter, bladder stones, or cancer of the bladder, ureters, or prostate.
+\end{itemize}
+
+\subsubsection{Chronic Kidney Disease (CKD)}
+
+Chronic kidney disease (CKD) is a type of kidney disease in which there is gradual loss of kidney function over a period of months or years. Early on there are typically no symptoms. Later, leg swelling, feeling tired, vomiting, loss of appetite, or confusion may develop. Complications may include heart disease, high blood pressure, bone disease, or anemia.
+
+\paragraph{Causes} The most common cause of CKD is diabetes mellitus followed by high blood pressure and glomerulonephritis (血管球性肾炎). Other causes of CKD include idiopathic (\textit{i.e.,} unknown cause, often associated with small kidneys on renal ultrasound). 
+
+\paragraph{End-Stage Renal Disease} End-stage renal disease (ESRD), also called end-stage kidney disease, occurs when chronic kidney disease -- the gradual loss of kidney function -- reaches an advanced state. In end-stage renal disease, kidneys are no longer able to work as they should to meet the body's needs.
+
+\paragraph{Membranous Nephropathy} Membranous nephropathy (MN) occurs when the small blood vessels in the kidney (glomeruli), which filter wastes from the blood, become damaged and thickened. As a result, proteins leak from the damaged blood vessels into the urine (proteinuria). For many, loss of these proteins eventually causes signs and symptoms known as nephrotic syndrome. MN is one of the most common causes of the nephrotic syndrome in adults. Over time this can lead to kidney failure as well. MN is caused by the build-up of immune complexes within the kidney itself. Immune complexes are made when a person's antibodies attack something they consider foreign to the body (an antigen). This is often an infection of some sort. 
+
+\subsection{Epidemiological Evidence}
+\paragraph{\citet{bowe2018particulate}}
+\begin{itemize}
+    \item \textit{Methods}:  We linked the Environmental Protection Agency and the Department of Veterans Affairs databases to build an observational cohort of 2,482,737 United States veterans, and used survival models to evaluate the association of PM2.5 concentrations and risk of incident eGFR $<$ 60 $ml/min$ per 1.73 $m^2$, incident CKD, eGFR decline $\geq$ 30\%, and ESRD over a median follow-up of 8.52 years.
+    \item \textit{Conclusions}: Our findings demonstrate a significant association between exposure to PM2.5 and risk of incident \textbf{CKD}, \textbf{eGFR decline} (eGFR decline $\geq$ 30\%), and \textbf{ESRD}.
+\end{itemize}
+
+\paragraph{\citet{mehta2016long}}
+\begin{itemize}
+    \item \textit{Methods}: This longitudinal analysis included 669 participants from the Veterans Administration Normative Aging Study with up to four visits between 2000 and 2011 (n = 1,715 visits). Serum creatinine was measured at each visit, and eGFR was calculated according to the Chronic Kidney Disease Epidemiology Collaboration equation. One-year exposure to PM2.5 prior to each visit was assessed using a validated spatiotemporal model that utilized satellite remote-sensing aerosol optical depth data. eGFR was modeled in a time-varying linear mixed-effects regression model as a continuous function of 1-year PM2.5, adjusting for important covariates.
+    \item \textit{Conclusions}: In this longitudinal sample of older men, the findings supported the hypothesis that long-term PM2.5 exposure negatively affects renal function and is associated with \textbf{lower eGFR} and \textbf{an increased rate of eGFR decline} over time.
+\end{itemize}
+
+\paragraph{\citet{xu2016long}}
+\begin{itemize}
+    \item \textit{Methods}: We estimated the profile of and temporal change in glomerular diseases in an 11-year renal biopsy series including 71,151 native biopsies at 938 hospitals spanning 282 cities in China from 2004 to 2014, and examined the association of long-term exposure to fine particulate matter of $<2.5\,\mu m$ (PM2.5) with glomerulopathy. 
+    \item \textit{Conclusions}: In conclusion, in this large renal biopsy series, the frequency of Membranous Nephropathy (MN) increased over the study period, and long-term exposure to high levels of PM2.5 was associated with \textbf{an increased risk of MN}.
+\end{itemize}
+
+\paragraph{\citet{lue2013residential}}
+\begin{itemize}
+    \item \textit{Methods}: We calculated the estimated glomerular filtration rate (eGFR) for 1,103 consecutive Boston-area patients hospitalised with confirmed acute ischaemic (缺血性) stroke between 1999 and 2004. We used linear regression to evaluate the association between eGFR and categories of residential distance to major roadway adjusting for age, sex, race, smoking, comorbid conditions, treatment with ACE inhibitor and neighbourhood-level socioeconomic characteristics. In a second analysis, we considered the log of distance to major roadway as a continuous variable.
+    \item \textit{Conclusions}: Living near a major roadway is associated with \textbf{lower eGFR} in a cohort of patients presenting with acute ischaemic stroke. If causal, these results imply that exposures associated with living near a major roadway contribute to reduced renal function, an important risk factor for cardiovascular events.
+\end{itemize}
+
+\paragraph{\citet{hendryx2009mortality}}
+\begin{itemize}
+    \item \textit{Methods}: The study investigated county-level, age-adjusted mortality rates for the years 2000 -- 2004 for heart, respiratory and kidney disease in relation to tons of coal mined. 
+    \item \textit{Conclusions}: Higher chronic heart, respiratory and \textbf{kidney disease mortality} in coal mining areas may partially reflect environmental exposure to particulate matter or toxic agents present in coal and released in its mining and processing. Differences between Appalachian and non-Appalachian areas may reflect different mining practices, population demographics, or mortality coding variability.
+\end{itemize}
+
+\paragraph{\citet{o2008airborne}}
+\begin{itemize}
+    \item \textit{Methods}: Urinary albumin and creatinine were measured among members of the Multi-Ethnic Study of Atherosclerosis at three visits during 2000 -- 2004. Exposure to PM2.5 and PM10 ($\mu g/m^3$) was estimated from ambient monitors for 1 month, 2 months and two decades before visit one. 
+    \item \textit{Conclusions}: \textbf{Urinary albumin/creatinine ratio} (UACR, $mg/g$) is not a strong mechanistic marker for the possible influence of air pollution on cardiovascular health in this sample.
+\end{itemize}
+
+\subsection{Possible Mechanisms}
+
+\subsubsection{Clinical Evidence}
+\paragraph{\citet{nemmar2009diesel}} Our data provide novel evidence that pulmonary deposition of diesel exhaust particles (DEP) potentiates the renal, systemic, and pulmonary effects of \textbf{cisplatin-induced ARF} and highlight the importance of environmental factors such as particulate air pollution in \textbf{aggravating ARF}. Our findings provide a plausible explanation for both the extrarenal effect of ARF and the extrapulmonary effects of particulate air pollution.
+
+\paragraph{\citet{thomson2013mapping}} To gain insight into mechanisms underlying such effects, we mapped gene profiles in the lungs, heart, liver, kidney, spleen, cerebral hemisphere, and pituitary of male Fischer-344 rats immediately and 24 h after a 4-h exposure by inhalation to particulate matter and ozone. We found that controlled exposure to urban or diesel exhaust particles was associated with \textbf{increased cytokine expression} in the kidney.
+
+\paragraph{\citet{nemmar2016prolonged}} We assessed the effect of prolonged exposure to diesel exhaust particles (DEP) on chronic renal failure induced by adenine (0.25\% w/w in feed for 4 weeks), which is known to involve inflammation and oxidative stress. Prolonged pulmonary exposure to diesel exhaust particles \textbf{worsen renal oxidative stress}, \textbf{inflammation} and \textbf{DNA damage} in mice with \textbf{adenine-induced} chronic renal failure. Our data provide biological plausibility that air pollution aggravates chronic renal failure.
+
+\paragraph{Cytokine} Cytokines are signaling proteins, usually less than 80 $kDa$ in size, which regulate a wide range of biological functions including innate and acquired immunity, hematopoiesis, inflammation and repair, and proliferation through mostly extracellular signaling. 
+
+\subsubsection{Hypotheses}
+
+Interest in the nonpulmonary targets of particulate air pollutants has been increasing since the demonstration that inhaled ultrafine particles (UFP) can affect distant organs either by direct passage across the alveolar capillary barrier and/or by the release of soluble inflammatory mediators and markers of oxidative stress into the systemic circulation, which may affect several distant organs including the heart, brain or kidney \citep{nemmar2013recent, nemmar2004possible, oberdorster2005nanotoxicology, peters2006translocation, vermylen2005ambient}. 
+
+\begin{itemize}
+    \item (\textit{Pulmonary disease $\rightarrow$ Renal disease}) Lung and kidney function are closely interconnected under physiological and pathophysiological conditions. It has been well-established that pulmonary injury can exacerbate kidney failure \citep{pierson2006respiratory}. Several studies have also reported consistent association between ARF and dysfunction of extrarenal organs, particularly the lungs \citep{hoke2007acute, pierson2006respiratory}.
+    \item (\textit{Renal disease $\rightarrow$ Cardiovascular disease}) It is hypothesized that renal function impairment may be a mediating factor (中介因素) of the cardiovascular effects of long-term PM2.5 exposure because the kidney is a vascularized organ susceptible to large-vessel atherosclerotic disease and microvascular dysfunction \citep{lue2013residential}. Impaired renal function, as determined from the estimated glomerular filtration rate (eGFR), is also associated with cardiovascular events and mortality \citep{fox2012associations, go2004chronic, sarnak2003kidney}. 
+    \item (\textit{Renal disease $\leftrightarrow$ Diabetes/hypertension}) Moreover, it is well-established that elderly people and those with pre-existing chronic diseases such as diabetes or hypertension are more vulnerable to the adverse effect of air pollution \citep{brook2010particulate}. Since patients with chronic renal failure (CRF) exhibit state of increased inflammation and oxidative stress, it is, therefore, conceivable that these patients are more susceptible to particulate air pollution \citep{laden2011air, huang2014impact}.
+\end{itemize}
+
+Some \textit{in vivo} studies in rats have shown controlled exposure to urban or diesel exhaust particles to be associated with increased cytokine expression in the kidney \citep{thomson2013mapping} and to aggravate acute renal failure \citep{nemmar2009diesel}. Three distinct hypotheses have been proposed to explain the epidemiologic observations of a relationship between PM2.5 and cardiovascular outcomes; these may also be pertinent in the evaluation of renal outcomes \citep{bowe2018particulate}.
+\begin{enumerate}
+    \item Inhaled particles provoke pulmonary inflammation which may then lead to systemic inflammation \citep{chin2014basic}.
+    \item The mechanism involves pollutant-induced disturbances in the lung autonomic nervous system \citep{chin2014basic}.
+    \item Air-borne particulates enter the bloodstream where they may then interact with tissue components to promote the observed pathologic effects. This is supported by emerging evidence suggesting that inhaled inert gold nanoparticles not only enter the bloodstream of healthy adult volunteers, but are detected in the urine within minutes after exposure, providing a proof of concept that inhaled nanoparticles get filtered and excreted by the kidney \citep{chin2014basic, miller2017inhaled}.
+\end{enumerate}
+
+\subsubsection{Pathways}
+
+ These three hypotheses provide contextual background to evaluate the experimental and clinical findings describing the extrapulmonary effect of particulate matter air pollution, where it has been reported that exposure to elevated levels of PM2.5 is associated with \citep{bowe2018particulate}
+ \begin{enumerate}
+     \item Increased inflammatory mediators (including TNF-$\alpha$, IL-6, and plasminogen activator inhibitor-1), oxidative stress \citep{ostro2014chronic, ruckerl2014associations, sorensen2003personal}, increased atherosclerotic plaque area, and exaggerated vasoconstrictor responses to phenylephrine and serotonin \citep{sun2005long}.
+     \item Significant decrease in flow-mediated dilatation \citep{krishnan2012vascular, wilker2014relation}, increases in systolic BP and pulse pressure \citep{auchincloss2008associations, fuks2014arterial, fuks2011long}, and disturbances in the hypothalamic-pituitary-adrenal axis \citep{thomson2013mapping}.
+     \item  Metabolic disturbances, including glucose intolerance, decreased insulin sensitivity, higher blood lipid concentrations, weight gain, and increased risk of diabetes mellitus \citep{wei2016chronic, chen2016ambient, wolf2016association}.
+ \end{enumerate}
+ 
+It is plausible that one or more of these mechanistic pathways may explain the association between the exposure to PM2.5 and kidney disease.
+
+\paragraph{Related Links}
+
+\begin{enumerate}
+    \item \href{https://labtestsonline.org/tests/estimated-glomerular-filtration-rate-egfr}{Estimated Glomerular Filtration Rate (eGFR)}
+    \item \href{https://www.mayoclinic.org/diseases-conditions/end-stage-renal-disease/symptoms-causes/syc-20354532}{End-Stage Renal Disease}
+    \item \href{https://unckidneycenter.org/kidneyhealthlibrary/glomerular-disease/membranous-nephropathy/}{Membranous Nephropathy 1}
+    \item \href{https://www.mayoclinic.org/diseases-conditions/membranous-nephropathy/symptoms-causes/syc-20365189}{Membranous Nephropathy 2}
+    \item \url{https://en.wikipedia.org/wiki/Acute_kidney_injury}
+    \item \url{https://en.wikipedia.org/wiki/Renal_function}
+    \item \url{https://en.wikipedia.org/wiki/Chronic_kidney_disease}
+    \item \url{https://www.sciencedirect.com/topics/neuroscience/cytokines}
+\end{enumerate}
+
+
+\bibliographystyle{abbrvnat}
+\bibliography{references}
+
+
+\end{document}
