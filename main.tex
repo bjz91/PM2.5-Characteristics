@@ -8,6 +8,8 @@
 \usepackage[colorlinks,pdfstartview=FitH,citecolor=blue]{hyperref}
 \usepackage{xcolor}
 \usepackage{xeCJK} % Enabling Chinese characters
+\usepackage{float}
+\usepackage{multirow}
 
 % Header
 \usepackage{fancyhdr}
@@ -20,11 +22,79 @@
 
 \begin{document}
 
+\section{WHO PM2.5 and PM10 Guidelines}
+The WHO \textbf{air quality guidelines (AQGs)} (\url{http://www.who.int/phe/health_topics/outdoorair/outdoorair_aqg/en/}) are intended for worldwide use but have been developed to support actions to achieve air quality that protects public health in different contexts. Air quality standards, on the other hand, are set by each country to protect the public health of their citizens and as such are important component of national risk management and environmental policies. 
+
+National standards will vary according to the approach adopted for balancing health risks, technological feasibility, economic considerations and various other political and social factors, which in turn will depend on, among other things, the level of development and national capability in air quality management. 
+
+The guideline values recommended by WHO acknowledge this heterogeneity and, in particular, recognize that when formulating policy targets, governments should consider their own local circumstances carefully before adopting the guidelines directly as legally based standards.
+
+In addition to guideline values, \textbf{interim targets (ITs)} are given for each pollutant. These are proposed as incremental steps in a progressive reduction of air pollution and are intended for use in areas where pollution is high. These targets aim to promote a shift from high air pollutant concentrations, which have acute and serious health consequences, to lower air pollutant concentrations.
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{c|c|c|c}
+        \hline
+        Guidelines & Average Level & PM2.5 ($\mu g/m^3$) & PM10 ($\mu g/m^3$) \\
+        \hline
+        \multirow{2}{*}{IT-1} & Annual Mean (long-term exposure) & 35 & 70 \\
+         & 24-hour Mean (short-term exposure) & 75 & 150 \\
+        \hline
+        \multirow{2}{*}{IT-2} & Annual Mean & 25 & 50 \\
+         & 24-hour Mean & 50 & 100 \\
+        \hline
+        \multirow{2}{*}{IT-3} & Annual Mean & 15 & 30 \\
+         & 24-hour Mean & 37.5 & 75 \\
+        \hline
+        \multirow{2}{*}{AQG} & Annual Mean & 10 & 20 \\
+         & 24-hour Mean & 25 & 50 \\
+        \hline
+    \end{tabular}
+    \label{tab:aqg}
+\end{table}
+
+\section{PM2.5 AQI Equation}
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|c|c|c|c|c|}
+    \hline
+        \textbf{PM\textsubscript{2.5}} & \textbf{Conc\textsubscript{Lo}} ($\mu g/m^3$) & \textbf{Conc\textsubscript{Hi}} ($\mu g/m^3$) & \textbf{AQI\textsubscript{Lo}} & \textbf{AQI\textsubscript{Hi}}\\ 
+        \hline
+        Good & 0.0 & 12.0 & 0 & 50 \\
+        \hline
+        Moderate & 12.1 & 35.4 & 51 & 100 \\
+        \hline
+        Unhealthy For Sensitive Groups & 35.5 & 55.4 & 101 & 150 \\
+        \hline
+        Unhealthy & 55.5 & 150.4 & 151 & 200 \\
+        \hline
+        Very Unhealthy & 150.5 & 250.4 & 201 & 300 \\
+        \hline
+        Hazardous & 250.5 & 500.4 & 301 & 500 \\
+        \hline
+    \end{tabular}
+    \caption{AQI and Concentration Breakpoints}
+    \label{tab:pm25break}
+\end{table}
+
+AQI Equation: 
+$$
+\mathrm{AQI=\frac{AQI_{Hi} - AQI_{Lo}}{Conc_{Hi} - Conc_{Lo}}\times (\mathbf{Conc_i} - Conc_{Lo}) + AQI_{Lo}}
+$$
+where
+\begin{itemize}
+    \item \textbf{Conc\textsubscript{i}} = Input concentration for a given pollutant
+    \item Conc\textsubscript{Lo} = The concentration breakpoint that is less than or equal to \textbf{Conc\textsubscript{i}}
+    \item Conc\textsubscript{Hi} = The concentration breakpoint that is greater than or equal to \textbf{Conc\textsubscript{i}}
+    \item AQI\textsubscript{Lo} = The AQI value corresponding to \textbf{Conc\textsubscript{i}}
+    \item AQI\textsubscript{Hi} = The AQI value corresponding to \textbf{Conc\textsubscript{i}}
+\end{itemize}
+
 \section{PM2.5 Composition and Sources}
 
 PM is a widespread air pollutant, consisting of a mixture of solid and liquid particles suspended in the air. PM2.5 refers to the particles with aerodynamic diameters less than or equal to 2.5 $\mu m$.
 
-\begin{table}[h!]
+\begin{table}[H]
     \centering
     \begin{tabular}{|c|p{0.6\textwidth}|}
         \hline
@@ -232,7 +302,7 @@ Interest in the nonpulmonary targets of particulate air pollutants has been incr
 
 \begin{itemize}
     \item (\textit{Pulmonary disease $\rightarrow$ Renal disease}) Lung and kidney function are closely interconnected under physiological and pathophysiological conditions. It has been well-established that pulmonary injury can exacerbate kidney failure \citep{pierson2006respiratory}. Several studies have also reported consistent association between ARF and dysfunction of extrarenal organs, particularly the lungs \citep{hoke2007acute, pierson2006respiratory}.
-    \item (\textit{Renal disease $\rightarrow$ Cardiovascular disease}) It is hypothesized that renal function impairment may be a mediating factor (中介因素) of the cardiovascular effects of long-term PM2.5 exposure because the kidney is a vascularized organ susceptible to large-vessel atherosclerotic disease and microvascular dysfunction \citep{lue2013residential}. Impaired renal function, as determined from the estimated glomerular filtration rate (eGFR), is also associated with cardiovascular events and mortality \citep{fox2012associations, go2004chronic, sarnak2003kidney}. 
+    \item (\textit{Renal disease $\rightarrow$ Cardiovascular disease}) It is hypothesized that renal function impairment may be a mediating factor of the cardiovascular effects of long-term PM2.5 exposure because the kidney is a vascularized organ susceptible to large-vessel atherosclerotic disease and microvascular dysfunction \citep{lue2013residential}. Impaired renal function, as determined from the estimated glomerular filtration rate (eGFR), is also associated with cardiovascular events and mortality \citep{fox2012associations, go2004chronic, sarnak2003kidney}. 
     \item (\textit{Renal disease $\leftrightarrow$ Diabetes/hypertension}) Moreover, it is well-established that elderly people and those with pre-existing chronic diseases such as diabetes or hypertension are more vulnerable to the adverse effect of air pollution \citep{brook2010particulate}. Since patients with chronic renal failure (CRF) exhibit state of increased inflammation and oxidative stress, it is, therefore, conceivable that these patients are more susceptible to particulate air pollution \citep{laden2011air, huang2014impact}.
 \end{itemize}
 
